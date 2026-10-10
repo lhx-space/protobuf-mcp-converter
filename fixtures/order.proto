@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package order;
+
+enum OrderStatus {
+  ORDER_STATUS_UNSPECIFIED = 0;
+  ORDER_STATUS_PENDING = 1;
+  ORDER_STATUS_PAID = 2;
+  ORDER_STATUS_CANCELLED = 3;
+}
+
+message GetOrderRequest {
+  string order_id = 1;
+}
+
+message GetOrderResponse {
+  string order_id = 1;
+  int64 amount = 2;
+  OrderStatus status = 3;
+  repeated string tags = 4;
+  map<string, string> labels = 5;
+}

@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "protobuf-remote": {
+      "url": "http://127.0.0.1:4200/mcp"
+    },
+    "protobuf-workspace-bridge": {
+      "command": "npx",
+      "args": ["tsx", "/ABSOLUTE/PATH/protobuf-mcp-demo/src/workspace-bridge.ts"],
+      "env": {
+        "ARTIFACT_SERVER_BASE_URL": "http://127.0.0.1:4200",
+        "WORKSPACE_ROOT": "/ABSOLUTE/PATH/TO/YOUR/FRONTEND-REPO"
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "protobuf-mcp-demo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Educational end-to-end demo: Protobuf conversion HTTP service + local stdio MCP + remote Streamable HTTP MCP + local workspace bridge",
+  "scripts": {
+    "dev:converter": "tsx src/converter-server.ts",
+    "dev:mcp:local": "tsx src/mcp-local.ts",
+    "dev:mcp:http": "tsx src/mcp-http-remote.ts",
+    "dev:workspace-bridge": "tsx src/workspace-bridge.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "express": "^4.21.2",
+    "protobufjs": "^7.5.4",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.13.4",
+    "tsx": "^4.20.6",
+    "typescript": "^5.7.3"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "protobuf-local": {
+      "command": "npx",
+      "args": ["tsx", "/ABSOLUTE/PATH/protobuf-mcp-demo/src/mcp-local.ts"],
+      "env": {
+        "CONVERTER_BASE_URL": "http://127.0.0.1:4100",
+        "WORKSPACE_ROOT": "/ABSOLUTE/PATH/TO/YOUR/FRONTEND-REPO"
+      }
+    }
+  }
+}
